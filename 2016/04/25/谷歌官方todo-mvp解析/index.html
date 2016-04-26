@@ -7,27 +7,43 @@
   <title>谷歌官方todo-mvp解析 | fccity&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="导语
-MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。
+MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。它使用本地和远程数据，异步处理任务回调。
 
-项目地址作者认为Activity与Fragment的分离非常适合MVP
-每个模块独立出来，有各自的Activity，Fragment，Contract和Presenter。">
+项目地址
+Fragments作者认为Activity与Fragment的分离非常适合MVP：
+
+Activity和Fragment的分离使得Activity可以专注于连接view和presenter
+Fragment更适用于平板电脑的适配
+
+概念每个模块独立出来，并且">
 <meta property="og:type" content="article">
 <meta property="og:title" content="谷歌官方todo-mvp解析">
 <meta property="og:url" content="http://yoursite.com/2016/04/25/谷歌官方todo-mvp解析/index.html">
 <meta property="og:site_name" content="fccity's blog">
 <meta property="og:description" content="导语
-MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。
+MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。它使用本地和远程数据，异步处理任务回调。
 
-项目地址作者认为Activity与Fragment的分离非常适合MVP
-每个模块独立出来，有各自的Activity，Fragment，Contract和Presenter。">
-<meta property="og:updated_time" content="2016-04-25T14:28:20.000Z">
+项目地址
+Fragments作者认为Activity与Fragment的分离非常适合MVP：
+
+Activity和Fragment的分离使得Activity可以专注于连接view和presenter
+Fragment更适用于平板电脑的适配
+
+概念每个模块独立出来，并且">
+<meta property="og:image" content="http://7xrz8w.com1.z0.glb.clouddn.com/mvp.png">
+<meta property="og:updated_time" content="2016-04-26T02:50:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="谷歌官方todo-mvp解析">
 <meta name="twitter:description" content="导语
-MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。
+MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。它使用本地和远程数据，异步处理任务回调。
 
-项目地址作者认为Activity与Fragment的分离非常适合MVP
-每个模块独立出来，有各自的Activity，Fragment，Contract和Presenter。">
+项目地址
+Fragments作者认为Activity与Fragment的分离非常适合MVP：
+
+Activity和Fragment的分离使得Activity可以专注于连接view和presenter
+Fragment更适用于平板电脑的适配
+
+概念每个模块独立出来，并且">
   
   
     <link rel="icon" href="/favicon.png">
@@ -103,16 +119,30 @@ MVP模式有许多不同的版本，但这个范例是它的基础。这是一�
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h4><blockquote>
-<p>MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。</p>
+<p>MVP模式有许多不同的版本，但这个范例是它的基础。这是一个对MVP模式的简单实现。它使用本地和远程数据，异步处理任务回调。</p>
 </blockquote>
-<p>项目<a href="https://github.com/googlesamples/android-architecture/tree/todo-mvp" target="_blank" rel="external">地址</a><br>作者认为Activity与Fragment的分离非常适合MVP</p>
-<p>每个模块独立出来，有各自的Activity，Fragment，Contract和Presenter。</p>
+<p><img src="http://7xrz8w.com1.z0.glb.clouddn.com/mvp.png" alt="todo-mvp"><br>项目<a href="https://github.com/googlesamples/android-architecture/tree/todo-mvp" target="_blank" rel="external">地址</a></p>
+<h4 id="Fragments"><a href="#Fragments" class="headerlink" title="Fragments"></a>Fragments</h4><p>作者认为Activity与Fragment的分离非常适合MVP：</p>
+<ul>
+<li>Activity和Fragment的分离使得Activity可以专注于连接view和presenter</li>
+<li>Fragment更适用于平板电脑的适配</li>
+</ul>
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>每个模块独立出来，并且有对应的Activity，Fragment，UI接口contract和presenter。</p>
+<ul>
+<li>Activity负责初始化UI、Fragment以及presenter</li>
+<li>Fragment负责实现contact的view接口</li>
+<li>presenter实现contact的presenter接口</li>
+<li>contract定义view的方法和presenter方法</li>
+</ul>
+<p>一般情况下，业务逻辑在presenter中实现。view不包含逻辑，它监听用户的UI操作并且传递给presenter。contacts接口定义view和presenter之间的联系。</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><p>架构清晰，轻量，可测</p>
+<h4 id="维护性"><a href="#维护性" class="headerlink" title="维护性"></a>维护性</h4><p>易于修改以及添加新功能模块。</p>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/04/25/谷歌官方todo-mvp解析/" data-id="cing3og4j0000kyyz6wka4phe" class="article-share-link" data-share="baidu" data-title="谷歌官方todo-mvp解析">分享到</a>
+        <a data-url="http://yoursite.com/2016/04/25/谷歌官方todo-mvp解析/" data-id="cingu5vd000001lyzyuyudc0m" class="article-share-link" data-share="baidu" data-title="谷歌官方todo-mvp解析">分享到</a>
       
 
       
