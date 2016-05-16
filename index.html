@@ -69,6 +69,47 @@
     <div class="outer">
       <section id="main">
   
+    <article id="post-React-Native-运行-F8-2016-App-遇到的问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/" class="article-date">
+  <time datetime="2016-05-16T14:40:25.000Z" itemprop="datePublished">2016-05-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/">#React Native#运行 F8 2016 App 遇到的问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="React-Native-运行-F8-2016-App-遇到的问题"><a href="#React-Native-运行-F8-2016-App-遇到的问题" class="headerlink" title="#React Native#运行 F8 2016 App 遇到的问题"></a>#React Native#运行 F8 2016 App 遇到的问题</h3><p>运行F8 App时遇到下面的报错信息：<br>‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’<br><img src="http://7xrz8w.com1.z0.glb.clouddn.com/f8app%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF.jpg" alt=""><br>经过一番谷歌之后，发现可能是由于终端同时运行了两个React Native引起的，于是在关闭终端，重启F8 App之后，便不再报错了。<br>以Android为例，每次React Native项目运行的时候<code>index.android.js</code>最后都要执行<code>AppRegistry.registerComponent</code>，这是注册应用的入口，这个应用名称要与MainActivity中<code>getMainComponentName</code>返回的名称保持一致，否则就会报这个错误。这时候出现这个问题的原因就是同一个终端中运行两个React Native导致的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/" data-id="cioa4cf810000wzyzwesbastb" class="article-share-link" data-share="baidu" data-title="#React Native#运行 F8 2016 App 遇到的问题">分享到</a>
+      
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-vi快捷键" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/05/11/vi快捷键/" class="article-date">
@@ -105,7 +146,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/05/11/vi快捷键/" data-id="cio2d0j580000ojyz13uc9hos" class="article-share-link" data-share="baidu" data-title="vi快捷键">分享到</a>
+        <a data-url="http://yoursite.com/2016/05/11/vi快捷键/" data-id="cioa4cf8q0002wzyzl89hmw7i" class="article-share-link" data-share="baidu" data-title="vi快捷键">分享到</a>
       
 
       
@@ -164,7 +205,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/04/25/谷歌官方todo-mvp解析/" data-id="cio2d0j5l0001ojyzgmx48g62" class="article-share-link" data-share="baidu" data-title="谷歌官方todo-mvp解析">分享到</a>
+        <a data-url="http://yoursite.com/2016/04/25/谷歌官方todo-mvp解析/" data-id="cioa4cf8j0001wzyzawbitzon" class="article-share-link" data-share="baidu" data-title="谷歌官方todo-mvp解析">分享到</a>
       
 
       
@@ -192,7 +233,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -202,6 +243,10 @@
     <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/">#React Native#运行 F8 2016 App 遇到的问题</a>
+          </li>
         
           <li>
             <a href="/2016/05/11/vi快捷键/">vi快捷键</a>
