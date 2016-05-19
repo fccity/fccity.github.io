@@ -4,19 +4,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>#React Native#运行 F8 2016 App 遇到的问题 | fccity&#39;s blog</title>
+  <title>运行 F8 2016 App 遇到的问题 | fccity&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#React Native#运行 F8 2016 App 遇到的问题运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppReg">
+  <meta name="description" content="运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’经过一番谷歌之后，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="#React Native#运行 F8 2016 App 遇到的问题">
+<meta property="og:title" content="运行 F8 2016 App 遇到的问题">
 <meta property="og:url" content="http://yoursite.com/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/index.html">
 <meta property="og:site_name" content="fccity's blog">
-<meta property="og:description" content="#React Native#运行 F8 2016 App 遇到的问题运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppReg">
+<meta property="og:description" content="运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’经过一番谷歌之后，">
 <meta property="og:image" content="http://7xrz8w.com1.z0.glb.clouddn.com/f8app%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF.jpg">
-<meta property="og:updated_time" content="2016-05-16T14:41:00.000Z">
+<meta property="og:updated_time" content="2016-05-19T01:25:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="#React Native#运行 F8 2016 App 遇到的问题">
-<meta name="twitter:description" content="#React Native#运行 F8 2016 App 遇到的问题运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppReg">
+<meta name="twitter:title" content="运行 F8 2016 App 遇到的问题">
+<meta name="twitter:description" content="运行F8 App时遇到下面的报错信息：‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’经过一番谷歌之后，">
   
   
     <link rel="icon" href="/favicon.png">
@@ -83,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      #React Native#运行 F8 2016 App 遇到的问题
+      运行 F8 2016 App 遇到的问题
     </h1>
   
 
@@ -91,23 +91,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="React-Native-运行-F8-2016-App-遇到的问题"><a href="#React-Native-运行-F8-2016-App-遇到的问题" class="headerlink" title="#React Native#运行 F8 2016 App 遇到的问题"></a>#React Native#运行 F8 2016 App 遇到的问题</h3><p>运行F8 App时遇到下面的报错信息：<br>‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’<br><img src="http://7xrz8w.com1.z0.glb.clouddn.com/f8app%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF.jpg" alt=""><br>经过一番谷歌之后，发现可能是由于终端同时运行了两个React Native引起的，于是在关闭终端，重启F8 App之后，便不再报错了。<br>以Android为例，每次React Native项目运行的时候<code>index.android.js</code>最后都要执行<code>AppRegistry.registerComponent</code>，这是注册应用的入口，这个应用名称要与MainActivity中<code>getMainComponentName</code>返回的名称保持一致，否则就会报这个错误。这时候出现这个问题的原因就是同一个终端中运行两个React Native导致的。</p>
+        <p>运行F8 App时遇到下面的报错信息：<br>‘Invariant Violation:Application * has not been registered. This is either due to a require() error during initialization or failure to call AppRegistry.registerComponent.’<br><img src="http://7xrz8w.com1.z0.glb.clouddn.com/f8app%E6%8A%A5%E9%94%99%E4%BF%A1%E6%81%AF.jpg" alt=""><br>经过一番谷歌之后，发现可能是由于终端同时运行了两个React Native引起的，于是在关闭终端，重启F8 App之后，便不再报错了。<br>以Android为例，每次React Native项目运行的时候<code>index.android.js</code>最后都要执行<code>AppRegistry.registerComponent</code>，这是注册应用的入口，这个应用名称要与MainActivity中<code>getMainComponentName</code>返回的名称保持一致，否则就会报这个错误。这时候出现这个问题的原因就是同一个终端中运行两个React Native导致的。</p>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/" data-id="cioa4cf810000wzyzwesbastb" class="article-share-link" data-share="baidu" data-title="#React Native#运行 F8 2016 App 遇到的问题">分享到</a>
+        <a data-url="http://yoursite.com/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/" data-id="ciodm8x5n0007s7yzag9cgivz" class="article-share-link" data-share="baidu" data-title="运行 F8 2016 App 遇到的问题">分享到</a>
       
 
       
 
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android-React-Native/">Android React Native</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/05/19/Android-代码混淆语法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          Android 代码混淆语法
+        
+      </div>
+    </a>
   
   
     <a href="/2016/05/11/vi快捷键/" id="article-nav-older" class="article-nav-link-wrap">
@@ -127,14 +138,28 @@
     
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-React-Native/">Android React Native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-todo-mvp/">Android todo-mvp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-混淆/">Android 混淆</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Android-React-Native/" style="font-size: 10px;">Android React Native</a> <a href="/tags/Android-todo-mvp/" style="font-size: 10px;">Android todo-mvp</a> <a href="/tags/Android-混淆/" style="font-size: 10px;">Android 混淆</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -146,7 +171,11 @@
       <ul>
         
           <li>
-            <a href="/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/">#React Native#运行 F8 2016 App 遇到的问题</a>
+            <a href="/2016/05/19/Android-代码混淆语法/">Android 代码混淆语法</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/16/React-Native-运行-F8-2016-App-遇到的问题/">运行 F8 2016 App 遇到的问题</a>
           </li>
         
           <li>
